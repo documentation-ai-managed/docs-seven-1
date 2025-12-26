@@ -1,0 +1,119 @@
+---
+title: Welcome to Seven
+description: An overview of Seven, the default documentation space for organizing and managing your project documentation with ease.
+---
+
+## Overview
+
+Seven provides a centralized space to organize, manage, and publish your project documentation. You create structured docs sites with MDX support, interactive components, and seamless navigation. Use Seven to streamline documentation workflows, collaborate with your team, and deliver polished guides to users.
+
+This default space comes pre-configured with essential features, allowing you to start immediately. Customize themes, add pages, and integrate code examples effortlessly.
+
+<Callout kind="info">
+  Seven uses `#3B82F6` as the primary brand color for consistent theming across your docs.
+</Callout>
+
+## Key Features
+
+Seven offers powerful tools to enhance your documentation experience.
+
+<Columns cols={3}>
+  <Card title="Rich MDX Components" icon="components" href="#components">
+    Build interactive docs with components like Steps, Tabs, and Cards. Embed code, diagrams, and media without custom setup.
+  </Card>
+  <Card title="Organized Navigation" icon="layout" href="#navigation">
+    Create hierarchical pages, sidebars, and search. Link between pages seamlessly for intuitive user journeys.
+  </Card>
+  <Card title="Customizable Themes" icon="palette" href="#branding">
+    Apply your brand colors like `#3B82F6` and custom icons. Preview changes live.
+  </Card>
+  <Card title="Version Control" icon="git-branch" href="/changelog">
+    Track changes with built-in changelog support using `<Update>` components.
+  </Card>
+</Columns>
+
+## Quick Start
+
+Get your first documentation page live in minutes.
+
+<Steps>
+  <Step title="Create a New Page" icon="plus">
+    Navigate to the Pages panel and click "New Page". Choose `introduction.mdx` as your template.
+
+    Select a title and description for the frontmatter.
+  </Step>
+  <Step title="Add Content" icon="edit-3">
+    Use Markdown and MDX components. Start with H2 headings and add `<Callout>` for emphasis.
+
+````mdx
+<Callout kind="tip">
+  Always escape special characters like `{variable}` with backticks.
+</Callout>
+````
+  </Step>
+  <Step title="Preview and Publish" icon="eye">
+    Preview in real-time. Click "Publish" to make it live.
+
+    <CodeGroup tabs="CLI,Web">
+````bash
+npx seven publish introduction.mdx
+````
+````javascript
+// Web UI auto-publishes on save
+console.log('Docs live!');
+````
+    </CodeGroup>
+  </Step>
+</Steps>
+
+## Quick Navigation
+
+Jump to essential sections to build your docs site.
+
+<Columns cols={2}>
+  <Card title="Get Started" icon="rocket" href="/quickstart">
+    Follow the quickstart guide for full setup.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your docs with API keys and auth.
+  </Card>
+  <Card title="Advanced Guides" icon="book-open" href="/guides">
+    Explore components and best practices.
+  </Card>
+  <Card title="Changelog" icon="git-commit" href="/changelog">
+    See recent updates and improvements.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Maintain consistency with Seven's branding.
+
+Use the primary color `#3B82F6` for headers, links, and accents. Pair it with neutral grays for text.
+
+| Element       | Color Value   | Usage Example                  |
+|---------------|---------------|--------------------------------|
+| Primary      | `#3B82F6`    | Buttons, links, icons         |
+| Secondary    | `#1E40AF`    | Hover states, active elements |
+| Text         | `#1F2937`    | Body text, headings           |
+| Background   | `#FFFFFF`    | Page backgrounds              |
+
+<Expandable title="Advanced Theming" default-open="false">
+  Customize further in your theme config:
+
+````json
+{
+  "colors": {
+    "primary": "#3B82F6"
+  },
+  "fonts": {
+    "body": "Inter, sans-serif"
+  }
+}
+````
+
+</Expandable>
+
+<Callout kind="tip">
+  Ready to dive deeper? Check the [Quickstart](/quickstart) for hands-on setup.
+</Callout>

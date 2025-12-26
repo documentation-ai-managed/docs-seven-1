@@ -1,0 +1,122 @@
+---
+title: Getting Started with Seven
+description: Set up your Seven account and create your first documentation space in just a few minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+<Callout kind="info">
+- A modern web browser like Chrome, Firefox, or Safari
+- An email address for account verification
+- No prior installation required—Seven runs entirely in the browser
+</Callout>
+
+## Create Your Account
+
+Sign up for Seven in under a minute.
+
+<Steps>
+  <Step title="Visit the Dashboard" icon="monitor">
+    Navigate to `https://dashboard.example.com` and click **Sign Up**.
+  </Step>
+  <Step title="Enter Details" icon="user">
+    Provide your email, create a password, and complete the CAPTCHA.
+  </Step>
+  <Step title="Verify Email" icon="mail">
+    Check your inbox for the verification link and click it to activate your account.
+  </Step>
+  <Step title="Log In" icon="log-in">
+    Return to the dashboard and sign in with your credentials.
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Once logged in, set up your project space.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+    Click **New Space** in the top-right corner.
+  </Step>
+  <Step title="Name It" icon="edit-3">
+    Enter a name like "My Project Docs" and select a starter template.
+  </Step>
+  <Step title="Customize Slug" icon="link">
+    Set a custom URL slug, e.g., `my-project-docs`.
+  </Step>
+  <Step title="Publish" icon="globe">
+    Save and publish—your space is now live at `https://docs.example.com/my-project-docs`.
+  </Step>
+</Steps>
+
+## Initial Setup and Customization
+
+Tailor your space to fit your needs.
+
+<Tabs>
+  <Tab title="Theme" icon="palette">
+    In the space settings, select a brand color like `#3B82F6`. Upload a logo and adjust typography.
+  </Tab>
+  <Tab title="Navigation" icon="menu">
+    Add pages via the sidebar. Drag to reorder and set a homepage.
+  </Tab>
+  <Tab title="Permissions" icon="shield">
+    Invite collaborators with roles: Viewer, Editor, or Admin. Use `YOUR_API_KEY` for integrations.
+  </Tab>
+</Tabs>
+
+<Callout kind="tip">
+  Enable custom domains in advanced settings for production use.
+</Callout>
+
+## Basic Interface Tour
+
+Explore the main areas:
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor">
+    Write MDX content with live preview.
+  </Card>
+  <Card title="Pages" icon="file-text" href="#pages">
+    Manage your documentation hierarchy.
+  </Card>
+  <Card title="Settings" icon="settings" href="#settings">
+    Configure themes, SEO, and integrations.
+  </Card>
+</Columns>
+
+Add your first page with a code example:
+
+<CodeGroup tabs="MDX,Markdown">
+  ```mdx
+  ---
+  title: Hello World
+  ---
+
+  ## Welcome
+
+  This is your first page!
+  ```
+  ```markdown
+  # Hello World
+
+  This is your first page in Markdown.
+  ```
+</CodeGroup>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your spaces with API keys.
+  </Card>
+  <Card title="Advanced Customization" icon="code" href="/configuration">
+    Dive into themes and components.
+  </Card>
+</Columns>
+
+<Callout kind="success">
+  Congratulations! You've created your first Seven documentation space. Explore the [Introduction](/introduction) for more features.
+</Callout>

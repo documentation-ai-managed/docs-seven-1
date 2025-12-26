@@ -1,0 +1,127 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Seven, including recent version releases.
+---
+
+## Recent Releases
+
+Stay informed about Seven's evolution. You receive new features, performance enhancements, and critical bug fixes through regular releases. Check the details below for what's new.
+
+<Update label="2024-10-15" description="v1.3.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for shared documentation spaces, allowing multiple users to edit simultaneously.
+- Introduced version history with diff views, so you can compare changes across document revisions.
+
+## Improvements
+
+- Enhanced search functionality with fuzzy matching and full-text indexing for faster results.
+- Optimized rendering performance, reducing load times by up to 40% for large documentation sites.
+
+## Bug Fixes
+
+- Fixed markdown parsing issues with nested lists and code blocks.
+- Resolved authentication token refresh errors during long editing sessions.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Integrated custom themes using your brand color `#3B82F6` and CSS variables for personalized styling.
+- Added export options to PDF and HTML, enabling easy offline sharing of your docs.
+
+## Bug Fixes
+
+- Corrected sidebar navigation glitches on mobile devices.
+- Patched security vulnerability in public space sharing links.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.1.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Launched space organization with folders and tags for better project documentation management.
+- Built-in analytics dashboard to track document views and engagement.
+
+## Breaking Changes
+
+- Updated API endpoints from `/v1/docs` to `/v2/spaces`—migrate your integrations using the new `{spaceId}` parameter.
+- Removed legacy markdown shortcodes in favor of MDX components.
+
+## Bug Fixes
+
+- Fixed image upload failures for non-standard formats.
+
+</Update>
+
+## Upcoming Changes
+
+Preview what's coming in v1.4.0. You can expect AI-assisted content generation and advanced workflow automations.
+
+<Callout kind="info">
+  Follow [GitHub releases](https://github.com/seven/docs/releases) for beta access and early feedback opportunities.
+</Callout>
+
+<Columns cols={3}>
+  <Card title="AI Content Helper" icon="bot" href="/docs/ai-features">
+    Generate outlines and summaries automatically.
+  </Card>
+  <Card title="Workflow Automation" icon="zap" href="/docs/workflows">
+    Set up custom approval flows for docs.
+  </Card>
+  <Card title="Advanced Permissions" icon="shield" href="/docs/permissions">
+    Granular role-based access controls.
+  </Card>
+</Columns>
+
+## Stay Updated
+
+Use these steps to integrate changelog notifications into your workflow.
+
+<Steps>
+  <Step title="Subscribe to RSS" icon="rss">
+    Add this feed to your reader:
+    
+````xml
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Seven Changelog</title>
+    <link>https://docs.example.com/changelog</link>
+  </channel>
+</rss>
+````
+  </Step>
+  <Step title="Watch GitHub" icon="github">
+    Visit the [Seven repository](https://github.com/seven/docs) and click "Watch" for release notifications.
+  </Step>
+  <Step title="Contribute" icon="code">
+    Fork the repo and submit pull requests for documentation improvements.
+  </Step>
+</Steps>
+
+## Contribute to the Changelog
+
+Help improve these notes by following our guidelines.
+
+<Expandable title="Contribution Guidelines" default-open="true">
+  When submitting changes:
+  
+  1. Use semantic versioning in descriptions (e.g., `v1.4.0`).
+  2. Categorize under `New Features`, `Bug Fixes`, or `Breaking Changes`.
+  3. Tag appropriately: `feature`, `bugfix`, `breaking`.
+  
+  Example PR description:
+  
+````markdown
+**v1.4.0**
+
+## New Features
+- Added XYZ
+````
+  
+</Expandable>
